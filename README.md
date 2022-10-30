@@ -51,3 +51,28 @@ private class telephoneandroid extends telephone { //encapsulation - private
                 + memory +" as the OS");
     }
 }
+abstraksi : 
+
+abstract class telephone {
+  abstract void sakti();}
+  class nokia extends telephone {
+  void sakti() {
+		System.out.println("saya pernah tawuran pakai nokia");
+	}
+}
+  
+  telephone fansnokia;
+		fansnokia = new nokia();
+    fansnokia.sakti();
+    
+Polymorphism :
+
+class nokia extends telephone { //polymorphism
+	void say () {
+		System.out.println("nokia paling kuat");
+	}
+}
+ telephone fansnokia;
+		fansnokia = new nokia();
+		fansnokia.say();
+
